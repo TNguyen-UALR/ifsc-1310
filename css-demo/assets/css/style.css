@@ -1,0 +1,36 @@
+/* ------  css-demo --------*/
+
+/* ------ Color Scheme ------
+Brown #F7EFD0 #786B37
+Pink #F8D0F6 #A2669F
+Blue #D0F7F2 #377870
+*/
+
+body{
+    background-color:#D0F7F2;
+    font-family: "Roboto Mono", monospace;
+}
+
+main{}
+
+header.primary{
+    background-color: #377870;
+    color:#af5aab;
+    text-align: center;
+    text-shadow: 2px 1px 10px #000000;
+}
+
+/*  ---------------Box Sizing-----------------  */
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*  ---------------Reponsive Images-----------------  */
+img {
+    max-width: 100%;
+}
