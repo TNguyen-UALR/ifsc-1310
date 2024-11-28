@@ -9,6 +9,7 @@ Blue #D0F7F2 #377870
 body{
     background-color:#D0F7F2;
     font-family: "Roboto Mono", monospace;
+    margin:0;
 }
 
 main{}
@@ -18,6 +19,49 @@ header.primary{
     color:#af5aab;
     text-align: center;
     text-shadow: 2px 1px 10px #000000;
+    /* Top, Right, Bottom, Left */
+    padding:20px 40px 20px 40px;
+}
+
+header.primary h1{
+    font-size:2.4rem;
+    margin: 20px 0 0;
+}
+
+header.primary h1 a{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+header.primary h2{
+    font-size:1.3rem;
+    margin:0;
+}
+
+header.primary nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:10px 0;
+}
+
+header.primary nav ul li{
+    list-style-type:none;
+}
+
+header.primary nav ul li a{
+    color:#ffffff;
+    font-size:.9rem;
+    text-decoration:none;
+    border:1px solid #c0c0c0;
+    padding: 7.5px 10px;
+    background-color: rgba(0,0,0, .4);
+    border-radius:20px;
+    transition: .4s;
+}
+
+header.primary nav ul li a:hover{
+    background-color: rgba(0,0,0, .8);
 }
 
 /*  ---------------Box Sizing-----------------  */
@@ -33,4 +77,18 @@ html {
 /*  ---------------Reponsive Images-----------------  */
 img {
     max-width: 100%;
+}
+
+/*  --------------- Media Queries ---------------  */
+@media screen and (max-width: 570px){
+    header.primary nav ul{
+        flex-direction:column;
+        gap:10px;
+        max-width:200px;
+        margin:10px auto;
+    }
+
+    header.primary nav a{
+        display:block;
+    }
 }
