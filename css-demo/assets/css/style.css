@@ -64,6 +64,49 @@ header.primary nav ul li a:hover{
     background-color: rgba(0,0,0, .8);
 }
 
+#content{
+    line-height:1.4;
+}
+
+#content h2{
+    color: #3b638b;
+    border-bottom: 1px dotted darkgrey;
+}
+
+#blog{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+    gap:2rem;
+}
+
+#blog article.post{
+    box-shadow: 0 4px 8px rgba(0,0,0,.6);
+    padding:10px;
+    border-radius:4px;
+    font-size:.8rem;
+    transition:.4s;
+}
+
+#blog article.post:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,.6);
+}
+
+#blog figure{
+    margin:0;
+}
+
+#blog figcaption, time.post-date{
+    text-transform:uppercase;
+    font-size: 0.6rem;
+    text-align: center;
+    color: #c0c0c0;
+}
+
+#blog .post a{
+    color:#3b638b;
+}
+
 /*  ---------------Box Sizing-----------------  */
 html {
     box-sizing: border-box;
@@ -91,4 +134,10 @@ img {
     header.primary nav a{
         display:block;
     }
+}
+
+/*  --------------- Utility Classes ---------------  */
+.container{
+    width: 80vw;
+    margin:40px auto;
 }
