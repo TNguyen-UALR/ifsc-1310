@@ -3,6 +3,14 @@ body{
     font-family: "Exo 2", sans-serif;
 }
 
+nav{
+    background-color:white;
+    border-left: 7.55px solid #472d4b;
+    padding:1px;
+}
+
+
+
 /*  ---------------Reponsive Images-----------------  */
 img {
     max-width: 70%;
