@@ -2,3 +2,22 @@ body{
     background-color:rgb(242, 223, 248);
     font-family: "Exo 2", sans-serif;
 }
+
+/*  ---------------Reponsive Images-----------------  */
+img {
+    max-width: 70%;
+}
+
+/*  --------------- Utility Classes ---------------  */
+.container{
+    width: 80vw;
+    margin:40px auto;
+}
+
+.img-left{
+    float:left;
+    border:1px solid #cccccc;
+    padding:5px;
+    margin:10px 20px 10px 0;
+    border-radius:10px;
+}
