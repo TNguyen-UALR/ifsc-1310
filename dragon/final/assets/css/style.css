@@ -1,0 +1,283 @@
+body{
+    background-image:url("../img/Stars.png");
+    /*background-color:#D0F7F2;*/
+    font-family: "Roboto Mono", monospace;
+    margin:0;
+    color:white;
+}
+
+header.primary{
+    background-color: #377870;
+    color:#af5aab;
+    text-align: center;
+    text-shadow: 2px 1px 10px #000000;
+    /* Top, Right, Bottom, Left */
+    padding:20px 40px 150px 40px;
+    background-color: #DFDBE5;
+    background-image: url("../img/dragon-in-space.jpg");
+    position:relative;
+    background-size:cover;
+}
+
+header.primary h1{
+    font-size:2.4rem;
+    margin: 20px 0 0;
+}
+
+header.primary h1 a{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+header.primary h2{
+    font-size:1.3rem;
+    margin:0;
+}
+
+header.primary nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:10px 0;
+}
+
+header.primary nav ul li{
+    list-style-type:none;
+}
+
+header.primary nav ul li a{
+    color:#ffffff;
+    font-size:.9rem;
+    text-decoration:none;
+    border:1px solid #c0c0c0;
+    padding: 7.5px 10px;
+    background-color: rgba(0,0,0, .4);
+    border-radius:20px;
+    transition: .4s;
+}
+
+header.primary nav ul li a:hover{
+    background-color: rgba(0,0,0, .8);
+}
+
+#content{
+    line-height:1.4;
+}
+
+#content h2{
+    color: #739dff;
+    border-bottom: 1px solid darkgrey;
+}
+
+#blog{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+    gap:2rem;
+    border-top:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+    padding: 40px 0 40px 0;
+}
+
+#blog article.post{
+    box-shadow: 0 4px 8px rgba(0,0,0,.6);
+    padding:10px;
+    border-radius:4px;
+    font-size:.8rem;
+    transition:.4s;
+}
+
+#blog article.post:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,.6);
+}
+
+#blog figure{
+    margin:0;
+}
+
+#blog figcaption, time.post-date{
+    text-transform:uppercase;
+    font-size: 0.6rem;
+    text-align: center;
+    color: #c0c0c0;
+}
+
+#blog .post a{
+    color:#739dff;
+}
+
+table{
+    width:100%;
+    border: 1px solid #c0c0c0;
+    border-collapse:collapse;
+    background-color: rgb(51, 51, 51);
+}
+
+caption{
+    font-weight: bold;
+    margin: 10px;
+    font-size:1.5rem;
+}
+
+tr:nth-child(even){
+    background-color: rgba(0,0,0,0.1);
+}
+
+td:nth-child(n+2){
+    text-align:left;
+}
+
+tr:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
+th{
+    background-color: #003250;
+    color:#ffffff;
+    padding:7.5px;
+}
+
+td{
+    border: 1px solid #c0c0c0;
+    padding:5px;
+}
+
+dl dd{
+    margin:0;
+}
+
+dd + dt{
+    margin-top:20px;
+    color:purple;
+}
+
+aside[role="complementary"]{
+    background-color: #3d5ca5;
+    background-color: #003250;
+    color:#ffffff;
+    padding:40px 0;
+
+}
+
+aside .container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    gap:40px;
+}
+
+aside article.widget a{
+    color:#ffffff;
+}
+
+aside article.widget a:last-of-type{
+    display:block;
+    margin-top:20px;
+    text-align:right;
+}
+
+aside article.widget footer{
+    display:none;
+}
+
+#colophon{
+    background-color:#060606;
+    padding:5px;
+    color:#ffffff;
+    font-size:1.2rem;
+    text-align:center;
+}
+
+.faq{
+    background-image:url("../img/Stars.png"),url("../img/Stars.png");
+    background-position: left, right;
+    background-size:165px, 165px;
+    background-repeat: repeat-y;
+    background-color:rgb(255, 255, 255);
+}
+
+.faq #content{
+    color:black;
+}
+
+details{
+    margin-top:20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.6);
+    padding:10px;
+    border-radius:4px;
+    font-size:.8rem;
+    transition:.4s;
+}
+
+details summary{
+    font-size:medium;
+}
+
+details p{
+    padding: 0 30px;
+}
+
+/*  ---------------Box Sizing-----------------  */
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*  ---------------Reponsive Images-----------------  */
+img {
+    max-width: 100%;
+}
+
+/*  --------------- Media Queries ---------------  */
+@media screen and (max-width: 570px){
+    header.primary nav ul{
+        flex-direction:column;
+        gap:10px;
+        max-width:200px;
+        margin:10px auto;
+    }
+
+    header.primary nav a{
+        display:block;
+    }
+}
+
+@media screen and (max-width:660px){
+    #blog{
+        flex-direction:column;
+    }
+}
+
+/*  --------------- Utility Classes ---------------  */
+.container{
+    width: 80vw;
+    margin:40px auto;
+}
+
+.img-right{
+    float:right;
+    border:1px solid #cccccc;
+    padding:5px;
+    margin:10px 0 10px 20px;
+    border-radius:20px;
+}
+
+.img-left{
+    float:left;
+    border:1px solid #cccccc;
+    padding:5px;
+    margin:10px 20px 10px 0;
+    border-radius:20px;
+}
+
+.img-center{
+    display:block;
+    border:1px solid #cccccc;
+    padding:5px;
+    margin:20px auto;
+    border-radius:40px;
+}
