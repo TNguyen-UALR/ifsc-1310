@@ -91,6 +91,7 @@ header.primary nav ul li a:hover{
     border-radius:4px;
     font-size:.8rem;
     transition:.4s;
+    background-color: rgb(0, 0, 0);
 }
 
 #blog article.post:hover{

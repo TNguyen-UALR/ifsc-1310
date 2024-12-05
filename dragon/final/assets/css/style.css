@@ -1,14 +1,22 @@
 body{
     background-image:url("../img/Stars.png");
+    background-size:cover;
     /*background-color:#D0F7F2;*/
     font-family: "Roboto Mono", monospace;
     margin:0;
     color:white;
+    background:url("../img/Stars-tile.png")left top repeat-y, url("../img/Stars-tile.png") right top repeat-y;
+    background-size:8.5%, 8.5%;
+    background-color:rgb(255, 255, 255);
+}
+
+body #content{
+    color:black;
 }
 
 header.primary{
     background-color: #377870;
-    color:#af5aab;
+    color:#ffffff;
     text-align: center;
     text-shadow: 2px 1px 10px #000000;
     /* Top, Right, Bottom, Left */
@@ -38,19 +46,19 @@ header.primary nav ul{
     display:flex;
     flex-direction:row;
     justify-content:space-around;
-    padding:10px 0;
+    padding:5px 0;
 }
 
 header.primary nav ul li{
     list-style-type:none;
+    float:left;
 }
 
 header.primary nav ul li a{
     color:#ffffff;
-    font-size:.9rem;
+    font-size:1.2rem;
     text-decoration:none;
-    border:1px solid #c0c0c0;
-    padding: 7.5px 10px;
+    padding: 14px 60px;
     background-color: rgba(0,0,0, .4);
     border-radius:20px;
     transition: .4s;
@@ -82,9 +90,11 @@ header.primary nav ul li a:hover{
 #blog article.post{
     box-shadow: 0 4px 8px rgba(0,0,0,.6);
     padding:10px;
-    border-radius:4px;
+    border-radius:10px;
     font-size:.8rem;
     transition:.4s;
+    color:black;
+    width:30%;
 }
 
 #blog article.post:hover{
@@ -111,6 +121,7 @@ table{
     border: 1px solid #c0c0c0;
     border-collapse:collapse;
     background-color: rgb(51, 51, 51);
+    color:white;
 }
 
 caption{
@@ -188,18 +199,6 @@ aside article.widget footer{
     text-align:center;
 }
 
-.faq{
-    background-image:url("../img/Stars.png"),url("../img/Stars.png");
-    background-position: left, right;
-    background-size:165px, 165px;
-    background-repeat: repeat-y;
-    background-color:rgb(255, 255, 255);
-}
-
-.faq #content{
-    color:black;
-}
-
 details{
     margin-top:20px;
     box-shadow: 0 4px 8px rgba(0,0,0,.6);
@@ -275,9 +274,14 @@ img {
 }
 
 .img-center{
-    display:block;
+    /*display:block;
     border:1px solid #cccccc;
-    padding:5px;
+    padding:5px;*/
     margin:20px auto;
     border-radius:40px;
+    size-adjust:50%;
+}
+
+.img-logo{
+    margin:20px auto;
 }

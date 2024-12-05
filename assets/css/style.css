@@ -7,13 +7,35 @@ body{
 
 nav{
     background-color:white;
-    border-left: 7.55px solid #472d4b;
+    border: 6px inset rgb(238, 238, 238);
     padding:1px;
+    margin:10px 50px;
 }
 
-p{
-    margin-left:50px;
-    margin-right:100px;
+h1{
+    text-align: center;
+    border-bottom:2px solid rgb(0, 0, 0);
+    margin:0px 30%;
+}
+
+h2{
+    margin-left:10px;
+    color:white;
+    text-shadow: 2px 2px 5px black;
+}
+
+#wrap{
+    background-color:rgba(255, 255, 255, 0.534);
+    border:5px double black;
+    margin:30px 25%;
+    padding:10px;
+}
+
+.response{
+    background-color:white;
+    border:3px outset rgb(182, 182, 182);
+    padding:0px 10px;
+    margin:0px 10px;
 }
 
 
